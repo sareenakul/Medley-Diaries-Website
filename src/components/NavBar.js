@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../Assets/img/logo.png';
+import iglogo from '../Assets/img/iglogo.png';
+import linkedinlogo from '../Assets/img/linkedinlogo.png';
+import ytlogo from '../Assets/img/ytlogo.png';
 export const NavBar = () =>{
     const[activeLink, setActiveLink] = useState('home');
     const[scrolled, setScrolled] = useState(false);
@@ -39,13 +42,13 @@ export const NavBar = () =>{
           <span className="navbar-text">
             <div className="social-icon">
                 <a href="https://www.instagram.com/medleydiaries/" target="_blank" rel="noopener noreferrer">
-                    <img src={'https://www.pngwing.com/en/search?q=INSTAGRAM'} alt="Instagram Icon"/>
+                    <img src={iglogo} alt="Instagram Icon"/>
                 </a>
                 <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223" target="_blank" rel="noopener noreferrer">
-                    <img src={'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.svgrepo.com%2Fshow%2F144030%2Flinkedin-square-logo.svg&tbnid=B9-ptCL3QEfN2M&vet=12ahUKEwj2jpX4obaCAxWNGGIAHZaQBykQMygLegUIARCAAQ..i&imgrefurl=https%3A%2F%2Fwww.svgrepo.com%2Fsvg%2F144030%2Flinkedin-square-logo&docid=JbKmgBbaZazxRM&w=800&h=800&q=linkedin%20logo&ved=2ahUKEwj2jpX4obaCAxWNGGIAHZaQBykQMygLegUIARCAAQ'} alt="LinkedIn Icon"/>
+                    <img src={linkedinlogo} alt="LinkedIn Icon"/>
                 </a>
                 <a href="https://www.youtube.com/@MedleyDiaries" target="_blank" rel="noopener noreferrer">
-                    <img src={'https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F48%2F48968.png&tbnid=idfsC_Gu3iZLVM&vet=12ahUKEwj5xdHIoraCAxVfElkFHWgXBX4QMygKegUIARCDAQ..i&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fyoutube-symbol_48968&docid=gggbAFYUlOFa_M&w=512&h=512&q=youtube%20logo&ved=2ahUKEwj5xdHIoraCAxVfElkFHWgXBX4QMygKegUIARCDAQ'} alt="YouTube Icon"/>
+                    <img src={ytlogo} alt="YouTube Icon"/>
                 </a>
             </div>
             <button className="vvd" onClick={()=> console.log('connect')}>

@@ -1,17 +1,17 @@
 @font-face {
-  font-family: Centra;
+  font-family: 'Centra-Bold';
   src: url('./Assets/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: Centra;
+  font-family: 'Centra-Medium';
   src: url('./Assets/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: Centra;
+  font-family: 'Centra-Book';
   src: url('./Assets/CentraNo2-Book.ttf');
   font-weight: 400;
 }
@@ -95,7 +95,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: palevioletred;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
