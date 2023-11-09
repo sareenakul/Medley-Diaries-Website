@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import logo from '../Assets/img/logo.png';
 export const NavBar = () =>{
     const[activeLink, setActiveLink] = useState('home');
     const[scrolled, setScrolled] = useState(false);
@@ -24,7 +25,7 @@ export const NavBar = () =>{
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={'https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3D%2522m%2Blogo%2522&psig=AOvVaw2jN_NNr_58eQhk0kswJAu8&ust=1699597138418000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCLjnj_OitoIDFQAAAAAdAAAAABAE'} alt="Medley Diaries Icon"/>
+            <img src={logo} alt="Medley Diaries Icon"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"> </span>
