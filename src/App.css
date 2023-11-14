@@ -182,11 +182,21 @@ span.navbar-text {
 .navbar-text button:hover {
   color: #121212;
 }
+.medley-logo {
+  width: 50px; /* set your desired width */
+  height: auto; /* set your desired height */
+  object-fit: cover; /* or "contain" based on your cropping preference */
+}
 .navbar-text button:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
+}
+
+.Navbar-container{
+  padding-top: 10px; /* Adjust the padding as needed */
+  padding-bottom: 10px; /* Adjust the padding as needed */
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
@@ -237,8 +247,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url(./Assets/bannerImage.jpeg);
+  padding: 100px 0 50px 0;
+  background-color: black;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -269,7 +279,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: black;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;

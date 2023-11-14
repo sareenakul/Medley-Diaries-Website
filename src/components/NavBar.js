@@ -3,7 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import iglogo from '../Assets/img/iglogo.png';
 import linkedinlogo from '../Assets/img/linkedinlogo.png';
 import ytlogo from '../Assets/img/ytlogo.png';
-import headinglogo from '../Assets/img/headinglogo.png';
+import medleylogo from '../Assets/medleylogo.jpg';
 export const NavBar = () =>{
     const[activeLink, setActiveLink] = useState('home');
     const[scrolled, setScrolled] = useState(false);
@@ -26,9 +26,9 @@ export const NavBar = () =>{
     }
     return(
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
-      <Container>
+      <Container className="Navbar-container">
         <Navbar.Brand href="#home">
-            <img src={headinglogo} alt="Medley Diaries Icon"/>
+            <img src={medleylogo} alt="Medley Diaries Icon" className="medley-logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"> </span>
