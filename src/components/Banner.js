@@ -49,7 +49,7 @@ export const Banner =()=>{
                         <span className="wrap">{text}!</span>
                         </h1>
                         <p>MedleyDiaries has kept a record of the most amazing days of mine here in Canada</p>
-                        <button onClick={()=> console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/></button>
+                        <button className="button" onClick={()=> console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={logo} alt="Header"/>

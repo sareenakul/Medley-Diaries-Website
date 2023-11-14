@@ -278,13 +278,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
+
+
 .banner button {
-  color: black;
-  font-weight: 700;
+  background-color: black;
+  color: white;
+  font-weight: 500;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 30px;
   letter-spacing: 0.8px;
-  display: flex;
+  display:flow-root;
   align-items: center;
 }
 .banner button svg {
