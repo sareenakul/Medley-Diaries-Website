@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import iglogo from '../Assets/img/iglogo.png';
-import linkedinlogo from '../Assets/img/linkedinlogo.png';
-import ytlogo from '../Assets/img/ytlogo.png';
-import medleylogo from '../Assets/medleylogo.jpg';
+import igg from '../Assets/img/igg.png';
+import ln from '../Assets/img/ln.png';
+import ytl from '../Assets/img/ytl.png';
+import MDlogo from '../Assets/MDlogo.png';
 export const NavBar = () =>{
     const[activeLink, setActiveLink] = useState('home');
     const[scrolled, setScrolled] = useState(false);
@@ -28,7 +28,7 @@ export const NavBar = () =>{
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container className="Navbar-container">
         <Navbar.Brand href="#home">
-            <img src={medleylogo} alt="Medley Diaries Icon" className="medley-logo"/>
+            <img src={MDlogo} alt="Medley Diaries Icon" className="medley-logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"> </span>
@@ -42,13 +42,13 @@ export const NavBar = () =>{
           <span className="navbar-text">
             <div className="social-icon">
                 <a href="https://www.instagram.com/medleydiaries/" target="_blank" rel="noopener noreferrer">
-                    <img src={iglogo} alt="Instagram Icon"/>
+                    <img src={igg} alt="Instagram Icon" className="social-icon-img"/>
                 </a>
                 <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223" target="_blank" rel="noopener noreferrer">
-                    <img src={linkedinlogo} alt="LinkedIn Icon"/>
+                    <img src={ln} alt="LinkedIn Icon" className="social-icon-img"/>
                 </a>
                 <a href="https://www.youtube.com/@MedleyDiaries" target="_blank" rel="noopener noreferrer">
-                    <img src={ytlogo} alt="YouTube Icon"/>
+                    <img src={ytl} alt="YouTube Icon" className="social-icon-img"/>
                 </a>
             </div>
             <button className="vvd" onClick={()=> console.log('connect')}>

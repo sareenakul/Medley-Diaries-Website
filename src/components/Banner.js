@@ -45,7 +45,7 @@ export const Banner =()=>{
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to MedleyDiaries</span>
-                        <h1>{`hi, I am a`}
+                        <h1 className="hii">{`hi, I am a`}
                         <span className="wrap">{text}!</span>
                         </h1>
                         <p>MedleyDiaries has kept a record of the most amazing days of mine here in Canada</p>
