@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import record from '../Assets/img/record.png';
+import skillbg from '../Assets/img/skillbg.png';
 
 // Correct the export statement
 const Skills = () => {
@@ -33,19 +35,19 @@ const Skills = () => {
               <p>This is my dummy text for skills</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
-                    <img src={''} alt="skill1"/>
+                    <img src={record} alt="skill1"/>
                     <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                    <img src={''} alt="skill2"/>
+                    <img src={record} alt="skill2"/>
                     <h5>Content Creation</h5>
                 </div>
                 <div className="item">
-                    <img src={''} alt="skill3"/>
+                    <img src={record} alt="skill3"/>
                     <h5>Video Editing</h5>
                 </div>
                 <div className="item">
-                    <img src={''} alt="skill4"/>
+                    <img src={record} alt="skill4"/>
                     <h5>Music Vocals</h5>
                 </div>
               </Carousel>
@@ -53,6 +55,7 @@ const Skills = () => {
           </Col>
         </Row>
       </Container>
+      <img className="background-image-left" src={skillbg}/>
     </section>
   );
 };
