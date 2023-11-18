@@ -358,8 +358,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: rgb(129, 205, 186);
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 60px 100px;
+  margin-top: -50px;
 }
 .skill h2 {
 	font-size: 45px;
