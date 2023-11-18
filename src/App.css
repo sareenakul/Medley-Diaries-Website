@@ -368,8 +368,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill p {
     color: #000000;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    font-size: 22px;
+    letter-spacing: 1px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
@@ -382,8 +382,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #000000;
 }
 .skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+  width: 40%;
+  margin: 0 auto 10px auto;
 }
 .background-image-left {
   top: 28%;
