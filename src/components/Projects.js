@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import YouTube from "react-youtube";
 
 const Projects = () =>{
     const projects = [
@@ -32,7 +33,15 @@ const Projects = () =>{
             description: "My 6th vlog in Canada",
             url: "https://www.youtube.com/watch?v=t1hEpYHdH2I&t=2s",
         },
-    ]
+    ];
+
+    const opts = {
+        height: "390",
+        width: "640",
+        playerVars: {
+            autoplay: 0,
+        },
+    }
 
     return(
         <section className="project" id="project">
@@ -41,6 +50,13 @@ const Projects = () =>{
                     <Col>
                         <h2>Projects</h2>
                         <p>Random text that describes my projects and the work I have contributed for</p>
+                        {projects.map((project, index) => (
+                            <div key={index}>
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <YouTube videoId={project.url} opts={opts}/>
+                            </div>
+                        ))}
                     </Col>
                 </Row>
             </Container>
