@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Tabs, Tab} from "react-bootstrap";
 import YouTube from "react-youtube";
 
 const Projects = () =>{
@@ -49,14 +49,35 @@ const Projects = () =>{
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Random text that describes my projects and the work I have contributed for</p>
-                        {projects.map((project, index) => (
-                            <div key={index}>
-                                <h3>{project.title}</h3>
-                                <p>{project.description}</p>
-                                <YouTube videoId={project.url} opts={opts}/>
-                            </div>
-                        ))}
+                        <p>All my youtube content that makes me relevant today</p>
+                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
+                            <Tab eventKey="first" title="Tab One">
+                            Tab One
+                            </Tab>
+                            <Tab eventKey="second" title="Tab Two">
+                            Tab Two
+                            </Tab>
+                            <Tab eventKey="third" title="Tab Three">
+                            Tab Three
+                            </Tab>
+                        </Tabs>
+                        <Tab.Content>
+                            <Tab.Pane eventKey="first">
+                                <Row>
+                                {
+                                    projects.map((project, index) => {
+                                    return(
+                                        <p>{project.title}</p>
+                                    )
+                                })
+                                }
+                                </Row>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="second"></Tab.Pane>
+                            <Tab.Pane eventKey="third"></Tab.Pane>
+                        </Tab.Content>
+                        </Tab.Container>
                     </Col>
                 </Row>
             </Container>
