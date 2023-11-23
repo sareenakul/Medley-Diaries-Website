@@ -1,47 +1,42 @@
-import { Container, Row, Col, Tabs, Tab} from "react-bootstrap";
-import YouTube from "react-youtube";
+import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
+import ProjectCard from "./ProjectCard";
+import Main from "./Main";
 
 const Projects = () =>{
     const projects = [
         {
             title: "Vlog 01",
             description: "My 1st vlog in Canada",
-            url: "https://www.youtube.com/watch?v=FAxgVkG4hMM&t=267s",
+            url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
         },
         {
+            
             title: "Vlog 02",
             description: "My 2nd vlog in Canada",
-            url: "https://www.youtube.com/watch?v=K3uhiGc9Fu0&t=240s",
+            url: "https://www.youtube.com/embed/K3uhiGc9Fu0?si=A6hlhnj8wa68029A",
         },
         {
             title: "Vlog 03",
             description: "My 3rd vlog in Canada",
-            url: "https://www.youtube.com/watch?v=xfisM-u78HE&t=73s",
+            url: "https://www.youtube.com/embed/xfisM-u78HE?si=QVDfB89BPa9EGcKP",
         },
         {
             title: "Vlog 04",
             description: "My 4th vlog in Canada",
-            url: "https://www.youtube.com/watch?v=C2CkV3NzJEs",
+            url: "https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3",
         },
         {
             title: "Vlog 05",
             description: "My 5th vlog in Canada",
-            url: "https://www.youtube.com/watch?v=v1oS9Su_kcc&t=64s",
+            url: "https://www.youtube.com/embed/v1oS9Su_kcc?si=5TzGLph1plwgMA9s",
         },
         {
             title: "Vlog 06",
             description: "My 6th vlog in Canada",
-            url: "https://www.youtube.com/watch?v=t1hEpYHdH2I&t=2s",
+            url: "https://www.youtube.com/embed/t1hEpYHdH2I?si=N_ldsevm4Uk9pRlH",
         },
     ];
 
-    const opts = {
-        height: "390",
-        width: "640",
-        playerVars: {
-            autoplay: 0,
-        },
-    }
 
     return(
         <section className="project" id="project">
@@ -51,24 +46,24 @@ const Projects = () =>{
                         <h2>Projects</h2>
                         <p>All my youtube content that makes me relevant today</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-                            <Tab eventKey="first" title="Tab One">
-                            Tab One
-                            </Tab>
-                            <Tab eventKey="second" title="Tab Two">
-                            Tab Two
-                            </Tab>
-                            <Tab eventKey="third" title="Tab Three">
-                            Tab Three
-                            </Tab>
-                        </Tabs>
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                            <Nav.Item>
+                                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
                                 <Row>
                                 {
                                     projects.map((project, index) => {
                                     return(
-                                        <p>{project.title}</p>
+                                        <ProjectCard key={index} {...project}/>
                                     )
                                 })
                                 }
@@ -81,6 +76,7 @@ const Projects = () =>{
                     </Col>
                 </Row>
             </Container>
+            <Main className="background-image-right"></Main>
         </section>
     )
 }

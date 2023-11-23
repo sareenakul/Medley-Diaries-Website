@@ -1,11 +1,20 @@
-import YouTube from "react-youtube"
 import { Col } from "react-bootstrap"
+
+const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+        autoplay: 0,
+    },
+}
 
 const ProjectCard = ({title, description, url}) =>{
     return(
         <Col sm={6} md={4}>
             <div className="proj-imgbx">
-                <YouTube videoId={url}/>
+            <div className="ratio ratio-16x9">
+                <iframe src={url} title={title} opts={opts} allowFullScreen></iframe>
+            </div>
                 <div className="proj-txtx">
                     <h4>{title}</h4>
                     <span>{description}</span>
@@ -14,3 +23,6 @@ const ProjectCard = ({title, description, url}) =>{
         </Col>
     )
 }
+
+
+export default ProjectCard;
