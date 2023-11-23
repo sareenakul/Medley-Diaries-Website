@@ -76,7 +76,6 @@ const Projects = () =>{
                     </Col>
                 </Row>
             </Container>
-            <Main className="background-image-right"></Main>
         </section>
     )
 }
