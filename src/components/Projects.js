@@ -1,9 +1,9 @@
 import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import Main from "./Main";
+import Reel from "./Reel";
 
 const Projects = () =>{
-    const projects = [
+    const ytprojects = [
         {
             title: "Vlog 01",
             description: "My 1st vlog in Canada",
@@ -37,9 +37,42 @@ const Projects = () =>{
         },
     ];
 
+    const igprojects = [
+        {
+            title: "Reel 1",
+            description: "My 1st reel",
+            url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
+        },
+        {
+            title: "Reel 2",
+            description: "My 2nd reel",
+            url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
+        },
+        {
+            title: "Reel 3",
+            description: "My 3rd reel",
+            url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
+        },
+        {
+            title: "Reel 4",
+            description: "My 4th reel",
+            url: "https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3",
+        },
+        {
+            title: "Reel 5",
+            description: "My 5th reel",
+            url: "https://www.youtube.com/embed/v1oS9Su_kcc?si=5TzGLph1plwgMA9s",
+        },
+        {
+            title: "Reel 6",
+            description: "My 6th reel",
+            url: "https://www.youtube.com/embed/t1hEpYHdH2I?si=N_ldsevm4Uk9pRlH",
+        },
+    ];
+
 
     return(
-        <section className="project" id="project">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
@@ -61,7 +94,7 @@ const Projects = () =>{
                             <Tab.Pane eventKey="first">
                                 <Row>
                                 {
-                                    projects.map((project, index) => {
+                                    ytprojects.map((project, index) => {
                                     return(
                                         <ProjectCard key={index} {...project}/>
                                     )
@@ -69,8 +102,20 @@ const Projects = () =>{
                                 }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second"></Tab.Pane>
-                            <Tab.Pane eventKey="third"></Tab.Pane>
+                            <Tab.Pane eventKey="second">
+                                <Row>
+                                    {
+                                        igprojects.map((reel, index) => {
+                                            return(
+                                                <Reel key={index} {...reel}/>
+                                            )
+                                        })
+                                    }
+                                </Row>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="third">
+                                <Row></Row>
+                            </Tab.Pane>
                         </Tab.Content>
                         </Tab.Container>
                     </Col>
