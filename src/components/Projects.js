@@ -37,36 +37,45 @@ const Projects = () =>{
         },
     ];
 
+    const volprojects = [
+        {
+            title: "Feeling Called Mayo",
+            description: "Hyperlapse of Mayo College",
+            url: "https://www.youtube.com/embed/XmZegflEZhk?si=98Pe8bzr97vrM_p4",
+        },
+    ];
+
     const igprojects = [
         {
             title: "Reel 1",
             description: "My 1st reel",
-            url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
+            url: "",
         },
         {
+            
             title: "Reel 2",
             description: "My 2nd reel",
-            url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
+            url: "",
         },
         {
             title: "Reel 3",
             description: "My 3rd reel",
-            url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
+            url: "",
         },
         {
             title: "Reel 4",
             description: "My 4th reel",
-            url: "https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3",
+            url: "",
         },
         {
             title: "Reel 5",
             description: "My 5th reel",
-            url: "https://www.youtube.com/embed/v1oS9Su_kcc?si=5TzGLph1plwgMA9s",
+            url: "",
         },
         {
             title: "Reel 6",
             description: "My 6th reel",
-            url: "https://www.youtube.com/embed/t1hEpYHdH2I?si=N_ldsevm4Uk9pRlH",
+            url: "",
         },
     ];
 
@@ -107,14 +116,22 @@ const Projects = () =>{
                                     {
                                         igprojects.map((reel, index) => {
                                             return(
-                                                <Reel key={index} {...reel}/>
+                                                <ProjectCard key={index} {...reel}/>
                                             )
                                         })
                                     }
                                 </Row>
                             </Tab.Pane>
                             <Tab.Pane eventKey="third">
-                                <Row></Row>
+                                <Row>
+                                    {
+                                        volprojects.map((vid, index) => {
+                                            return(
+                                                <ProjectCard key={index} {...vid}/>
+                                            )
+                                        })
+                                    }
+                                </Row>
                             </Tab.Pane>
                         </Tab.Content>
                         </Tab.Container>

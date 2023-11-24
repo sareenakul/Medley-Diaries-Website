@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import record from '../Assets/img/record.png';
-import skillbg from '../Assets/img/skillbg.png';
 
 // Correct the export statement
 const Skills = () => {
@@ -55,7 +54,6 @@ const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={skillbg}/>
     </section>
   );
 };
