@@ -49,33 +49,33 @@ const Projects = () =>{
         {
             title: "Reel 1",
             description: "My 1st reel",
-            url: "",
+            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             
             title: "Reel 2",
             description: "My 2nd reel",
-            url: "",
+            url: "https://www.instagram.com/reel/CV_s9XGlqGw/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             title: "Reel 3",
             description: "My 3rd reel",
-            url: "",
+            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             title: "Reel 4",
             description: "My 4th reel",
-            url: "",
+            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             title: "Reel 5",
             description: "My 5th reel",
-            url: "",
+            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             title: "Reel 6",
             description: "My 6th reel",
-            url: "",
+            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
     ];
 
@@ -116,7 +116,9 @@ const Projects = () =>{
                                     {
                                         igprojects.map((reel, index) => {
                                             return(
-                                                <ProjectCard key={index} {...reel}/>
+                                                <Col key={index} sm={6} md={4}>
+                                                    <Reel key={index} {...reel}/>
+                                                </Col>
                                             )
                                         })
                                     }
