@@ -36,17 +36,12 @@ const Reel = ({title, description, url}) => {
                     width: "99.375%",
                     widthWebkitCalc: "calc(100% - 2px)",
                     widthCalc: "calc(100% - 2px)",
-                }}
->
-  {/* Replace with the URL to your Instagram post */}
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View this post on Instagram
-  </a>
-</blockquote>
+                }}>
+
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                    View this post on Instagram
+                </a>
+            </blockquote>
         </Col>
     </Container>
   );

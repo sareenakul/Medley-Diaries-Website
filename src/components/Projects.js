@@ -43,6 +43,26 @@ const Projects = () =>{
             description: "Hyperlapse of Mayo College",
             url: "https://www.youtube.com/embed/XmZegflEZhk?si=98Pe8bzr97vrM_p4",
         },
+        {
+            title: "Medley",
+            description: "My first Medley",
+            url: "https://www.youtube.com/embed/VOcfRQkcOCk?si=a1U6p0g1wQ9j1y08",
+        },
+        {
+            title: "Jiye Kyon",
+            description: "A song close to my heart <3",
+            url: "https://www.youtube.com/embed/4C9Pqx4GBVM?si=YWnV7xZryRae0e7V",
+        },
+        {
+            title: "",
+            description: "",
+            url: "",
+        },
+        {
+            title: "Teri Mitti",
+            description: "A tribute to my country",
+            url: "https://www.youtube.com/embed/JuYODdv6uiY?si=k7rmJ0bEnRa5WCfl",
+        },
     ];
 
     const igprojects = [
@@ -60,22 +80,22 @@ const Projects = () =>{
         {
             title: "Reel 3",
             description: "My 3rd reel",
-            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
+            url: "https://www.instagram.com/reel/CaXWlGSl9Mx/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             title: "Reel 4",
             description: "My 4th reel",
-            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
+            url: "https://www.instagram.com/reel/CaL35zGlb1d/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             title: "Reel 5",
             description: "My 5th reel",
-            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
+            url: "https://www.instagram.com/reel/CYI_0otFq-f/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
         {
             title: "Reel 6",
             description: "My 6th reel",
-            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
+            url: "https://www.instagram.com/reel/CWpFFVAFptm/?utm_source=ig_embed&amp;utm_campaign=loading",
         },
     ];
 
