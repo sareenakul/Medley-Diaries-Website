@@ -492,7 +492,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -545,5 +544,64 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/* Style for the container */
+.custom-reel-container {
+  position: relative;
+  border-radius: 30px;
+  overflow:visible;
+  margin-bottom: 24px;
+  width: 100%;
+}
 
+.custom-reel-container::before {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.custom-reel-container:hover::before {
+  height: 100%;
+}
+
+/* Style for the embedded Instagram content */
+.custom-instagram-embed {
+  max-width: 100%; /* Make the embedded content responsive */
+}
+
+/* Style for the Reel text container */
+.custom-reel-text {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.custom-reel-container:hover .custom-reel-text {
+  top: 40%;
+  right: 100%;
+  opacity: 1;
+}
+
+.custom-reel-text h4 {
+  padding: auto;
+  color: whitesmoke;
+  border: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+
+.custom-reel-text span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
 
