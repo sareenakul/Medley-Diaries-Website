@@ -24,9 +24,6 @@ const Reel = ({ title, description, url }) => {
           data-instgrm-version="14"
           data-instgrm-embed-type="video"
         >
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            View this post on Instagram
-          </a>
         </blockquote>
         <div className="custom-reel-text">
         <h4>{title}</h4>
