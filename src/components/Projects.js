@@ -158,10 +158,11 @@ const Projects = () =>{
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
                                 <Row>
+                                   
                                     {
                                         igprojects.map((reel, index) => {
                                             return(
-                                                <Col key={index} sm={6} md={4}>
+                                                <Col key={index} sm={6} md={4} lg={4}>
                                                     <Reel key={index} {...reel}/>
                                                 </Col>
                                             )

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Col, Container } from "react-bootstrap";
+// import { Col } from "react-bootstrap";
 
 const Reel = ({ title, description, url }) => {
   useEffect(() => {
@@ -16,21 +16,22 @@ const Reel = ({ title, description, url }) => {
   }, []);
 
   return (
-    <Container>
-      <Col sm={6} md={4} className="custom-reel-container">
-        <blockquote
-          className="instagram-media custom-instagram-embed"
-          data-instgrm-permalink={url}
-          data-instgrm-version="14"
-          data-instgrm-embed-type="video"
-        >
-        </blockquote>
-        <div className="custom-reel-text">
-        <h4>{title}</h4>
-        <span>{description}</span>
+    <div style={{width: '100%', minHeight: '15rem'}}>
+        <div style={{minWidth: '100%', height: '100%'}}>
+          <blockquote
+            className="instagram-media custom-instagram-embed"
+            data-instgrm-permalink={url}
+            data-instgrm-version="14"
+            data-instgrm-embed-type="video"
+            style={{width: '100%'}}
+          >
+          </blockquote>
+          <div className="custom-reel-text">
+          <h4>{title}</h4>
+          <span>{description}</span>
+        </div>
       </div>
-      </Col>
-    </Container>
+    </div>
   );
 };
 
