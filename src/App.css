@@ -95,7 +95,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: rgb(242, 78, 7);
+  background-color: rgb(255, 165, 0);
 }
 
 nav.navbar a.navbar-brand {
@@ -162,7 +162,7 @@ span.navbar-text {
 
   /* Add additional styles for when the button is hovered */
   &:hover {
-    background: linear-gradient(90.21deg, rgba(230, 140, 45, 0.877) -5.91%, rgba(67, 177, 191, 0.5) 111.58%);/* Darker blue on hover */
+    background: linear-gradient(90.21deg, rgba(251, 102, 3, 0.877) -5.91%, rgba(250, 168, 3, 0.5) 111.58%);/* Darker blue on hover */
   }
 }
 .social-icon a:hover img {
@@ -439,6 +439,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fcfbfb;
   width: 100%;
   font-size: 17px;
+  font-style: italic;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
@@ -551,7 +552,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-top: 20px;
   max-width: 100%;
-  max-height: 80%;
+  max-height: 90%;
 }
 
 .reel-video-container::before {

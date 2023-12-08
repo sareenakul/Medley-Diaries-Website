@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 
-const ReelVideo = ({fileName, title, width, height}) =>{
+const ReelVideo = ({fileName, title, width, height, onVideoPlay}) =>{
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    
 
     const handleVideoEnd = () => {
     // Reset the video when it reaches the end
@@ -13,20 +14,21 @@ const ReelVideo = ({fileName, title, width, height}) =>{
     setIsPlaying(false);
   };
 
-  const handleMouseEnter = () => {
-    setIsPlaying(true);
+  const handleClick = () => {
+    if (!isPlaying) {
+      onVideoPlay(videoRef); // Notify the parent component about the currently playing video
+    }
+    setIsPlaying(!isPlaying);
   };
 
-  const handleMouseLeave = () => {
-    setIsPlaying(false);
-  };
+  
 
     const videoSource = require(`../Assets/reelvids/${fileName}`);
     return(
         <div className={`reel-video-container ${isPlaying ? 'playing' : ''}`}
-        style={{ width, height }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
+        style={{ width, height}}
+        onClick={handleClick}
+        >
             <video className="reel-video" ref={videoRef} onEnded={handleVideoEnd} controls={isPlaying}>
                 <source src={videoSource} type="video/mp4" />
             </video>

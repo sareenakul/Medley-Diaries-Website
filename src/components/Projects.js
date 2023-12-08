@@ -1,6 +1,7 @@
 import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import ReelVideo from "./ReelVideo";
+import { useRef } from "react";
 
 const Projects = () =>{
     const ytprojects = [
@@ -77,6 +78,19 @@ const Projects = () =>{
         { fileName: 'igvid9.mp4', title: 'Video 9' }
     ];
 
+    const currentVideoRef = useRef(null);
+
+    const handleVideoPlay = (videoRef) => {
+        // Pause the currently playing video if there is one
+        if (currentVideoRef.current && currentVideoRef.current !== videoRef.current) {
+          currentVideoRef.current.pause();
+          currentVideoRef.current.currentTime = 0;
+        }
+    
+        // Update the reference to the currently playing video
+        currentVideoRef.current = videoRef.current;
+      };
+
     
 
 
@@ -90,13 +104,13 @@ const Projects = () =>{
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                <Nav.Link eventKey="first">VLOGS</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                <Nav.Link eventKey="second">SHORTS</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                                <Nav.Link eventKey="third">VOLUNTEER</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
@@ -105,7 +119,7 @@ const Projects = () =>{
                                 {
                                     ytprojects.map((project, index) => {
                                     return(
-                                        <ProjectCard key={index} {...project}/>
+                                        <ProjectCard key={index} {...project} onVideoPlay={handleVideoPlay}/>
                                     )
                                 })
                                 }
@@ -118,7 +132,7 @@ const Projects = () =>{
                                         videoFileNames.map((videoFileName, index) => {
                                             return(
                                                 <Col key={index} sm={6} md={4} lg={4}>
-                                                    <ReelVideo key={index} {...videoFileName}/>
+                                                    <ReelVideo key={index} {...videoFileName} onVideoPlay={handleVideoPlay}/>
                                                 </Col>
                                             )
                                         })

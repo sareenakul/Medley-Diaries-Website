@@ -2,8 +2,10 @@ import { Col } from "react-bootstrap"
 import { useState } from "react";
 
 
-const ProjectCard = ({title, description, url}) =>{
+const ProjectCard = ({title, description, url, onVideoPlay}) =>{
     const [isPlaying, setIsPlaying] = useState(false);
+
+
 const opts = {
     height: "390",
     width: "640",
