@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import Reel from "./Reel";
+import ReelVideo from "./ReelVideo";
 
 const Projects = () =>{
     const ytprojects = [
@@ -65,64 +65,9 @@ const Projects = () =>{
         },
     ];
 
-    const igprojects = [
-        {
-            title: "Reel 8",
-            description: "My 8th reel",
-            url: "https://www.instagram.com/reel/CnqZh1zvjkU/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "Reel 9",
-            description: "My 9th reel",
-            url: "https://www.instagram.com/reel/Ceu4Is5F5KX/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            
-            title: "Reel 2",
-            description: "My 2nd reel",
-            url: "https://www.instagram.com/reel/CV_s9XGlqGw/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "Reel 3",
-            description: "My 3rd reel",
-            url: "https://www.instagram.com/reel/CaXWlGSl9Mx/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "Reel 1",
-            description: "My 1st reel",
-            url: "https://www.instagram.com/reel/CXwhetulmpT/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "Reel 4",
-            description: "My 4th reel",
-            url: "https://www.instagram.com/reel/CaL35zGlb1d/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "Reel 5",
-            description: "My 5th reel",
-            url: "https://www.instagram.com/reel/CYI_0otFq-f/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "Reel 6",
-            description: "My 6th reel",
-            url: "https://www.instagram.com/reel/CWpFFVAFptm/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "Reel 7",
-            description: "My 7th reel",
-            url: "https://www.instagram.com/reel/CuG3rjBNsyc/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-        {
-            title: "",
-            description: "",
-            url: "",
-        },
-        {
-            title: "Reel 10",
-            description: "My 10th reel",
-            url: "https://www.instagram.com/reel/CbQl9dqF45R/?utm_source=ig_embed&amp;utm_campaign=loading",
-        },
-    ];
+    const videoFileNames = ['igvid1.mp4','igvid2.mp4','igvid3.mp4','igvid4.mp4','igvid5.mp4','igvid6.mp4','igvid7.mp4','igvid8.mp4','igvid9.mp4'];
+
+    
 
 
     return(
@@ -160,10 +105,10 @@ const Projects = () =>{
                                 <Row>
                                    
                                     {
-                                        igprojects.map((reel, index) => {
+                                        videoFileNames.map((videoFileName, index) => {
                                             return(
                                                 <Col key={index} sm={6} md={4} lg={4}>
-                                                    <Reel key={index} {...reel}/>
+                                                    <ReelVideo key={index} videoFileName={videoFileName}/>
                                                 </Col>
                                             )
                                         })
