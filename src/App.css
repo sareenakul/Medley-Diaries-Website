@@ -544,47 +544,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/* Style for the container */
-.custom-reel-container {
-  position: relative;
-  border-radius: 30px;
-  overflow:visible;
-  margin-bottom: -150px;
-  width: 100%;
-}
-
-.custom-reel-container::before {
-  content: "";
-  position: relative;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.custom-reel-container:hover::before {
-  height: 100%;
-}
-
-/* Style for the embedded Instagram content */
-.custom-instagram-embed {
-  max-width: 100%; /* Make the embedded content responsive */
-}
-
-/* Style for the Reel text container */
-
-
-
-
-
-
-
-
 /* New reelvideo component */
 .reel-video-container {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 80%;
 }
 
 .reel-video-container::before {
@@ -606,11 +573,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-  color: wheat;
-  font-size: 40px;
+  color: rgb(248, 200, 111);
+  border: #000000;
+  font-size: 2.5em;
+  font-style: italic;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -619,4 +588,72 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .reel-video-container:hover .video-title {
   top: 50%;
   opacity: 1;
+}
+
+
+
+
+
+/* Contacts */
+
+.contact {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1; 
+}
+
+.contact img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact h2 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: burlywood;
+}
+
+.contact form {
+  margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.contact button span {
+  margin-right: 5px;
+}
+
+.contact p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.contact .Success {
+  color: #28a745;
+}
+
+.contact .Warning {
+  color: #dc3545;
 }
