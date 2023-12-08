@@ -1,7 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
-const ReelVideo = ({videoFileName, width, height}) =>{
+const ReelVideo = ({fileName, title, width, height}) =>{
     const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
 
     const handleVideoEnd = () => {
     // Reset the video when it reaches the end
@@ -9,15 +10,27 @@ const ReelVideo = ({videoFileName, width, height}) =>{
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
     }
+    setIsPlaying(false);
   };
 
-    const videoSource = require(`../Assets/reelvids/${videoFileName}`);
+  const handleMouseEnter = () => {
+    setIsPlaying(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPlaying(false);
+  };
+
+    const videoSource = require(`../Assets/reelvids/${fileName}`);
     return(
-        <div className="reel-video-container" style={{ width, height }}>
-            <video className="reel-video" controls ref={videoRef} onEnded={handleVideoEnd}>
+        <div className={`reel-video-container ${isPlaying ? 'playing' : ''}`}
+        style={{ width, height }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
+            <video className="reel-video" ref={videoRef} onEnded={handleVideoEnd} controls={isPlaying}>
                 <source src={videoSource} type="video/mp4" />
-                Browser does not support this.
             </video>
+            <div className="video-title">{title}</div>
         </div>
     );
 

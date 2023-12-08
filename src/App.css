@@ -571,7 +571,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Style for the Reel text container */
-.custom-reel-text {
+
+
+
+
+
+
+
+
+/* New reelvideo component */
+.reel-video-container {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.reel-video-container::before {
+  content: "";
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.reel-video-container:hover::before {
+  height: 100%;
+}
+
+.video-title {
   position: absolute;
   text-align: center;
   top: 65%;
@@ -580,53 +609,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-}
-
-.custom-reel-container:hover .custom-reel-text {
-  top: 40%;
-  right: 100%;
-  opacity: 1;
-}
-
-.custom-reel-text h4 {
-  padding: auto;
-  color: whitesmoke;
-  border: #000000;
+  color: wheat;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
 
-.custom-reel-text span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
+.reel-video-container:hover .video-title {
+  top: 50%;
+  opacity: 1;
 }
-
-/* New reelvideo component */
-.reel-video-container {
-  overflow: hidden;
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease;
-}
-
-.reel-video {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  margin-bottom: 50px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.reel-video-container:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* On hover, add a slight scale effect for a subtle interaction */
-.reel-video-container:hover .reel-video {
-  transform: scale(1.05);
-}
-
-

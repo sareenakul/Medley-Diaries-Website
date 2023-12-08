@@ -65,7 +65,17 @@ const Projects = () =>{
         },
     ];
 
-    const videoFileNames = ['igvid1.mp4','igvid2.mp4','igvid3.mp4','igvid4.mp4','igvid5.mp4','igvid6.mp4','igvid7.mp4','igvid8.mp4','igvid9.mp4'];
+    const videoFileNames = [
+        { fileName: 'igvid1.mp4', title: 'Video 1' },
+        { fileName: 'igvid2.mp4', title: 'Video 2' },
+        { fileName: 'igvid3.mp4', title: 'Video 3' },
+        { fileName: 'igvid4.mp4', title: 'Video 4' },
+        { fileName: 'igvid5.mp4', title: 'Video 5' },
+        { fileName: 'igvid6.mp4', title: 'Video 6' },
+        { fileName: 'igvid7.mp4', title: 'Video 7' },
+        { fileName: 'igvid8.mp4', title: 'Video 8' },
+        { fileName: 'igvid9.mp4', title: 'Video 9' }
+    ];
 
     
 
@@ -108,7 +118,7 @@ const Projects = () =>{
                                         videoFileNames.map((videoFileName, index) => {
                                             return(
                                                 <Col key={index} sm={6} md={4} lg={4}>
-                                                    <ReelVideo key={index} videoFileName={videoFileName}/>
+                                                    <ReelVideo key={index} {...videoFileName}/>
                                                 </Col>
                                             )
                                         })
