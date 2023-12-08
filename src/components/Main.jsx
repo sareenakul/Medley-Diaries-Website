@@ -5,9 +5,10 @@ import Contact from "./Contact";  // Adjust the path based on your file structur
 const Main = () => {
   return (
     <div className="main" style={{ width: '100%', height: 'auto', position: 'relative' }}>
-      <div className="overlay"></div>
+      <div className="overlay">
       <video src={home} autoPlay loop muted style={{ width: '100%', height: 'auto', position: 'absolute', top: 0, left: 0, zIndex: -1 }} />
       <Contact />
+      </div>
     </div>
   );
 };
