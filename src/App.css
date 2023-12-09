@@ -399,18 +399,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: rgb(11, 6, 6);
+  background-color: black;
 }
 
 .project h2 {
-  color: black;
+  color: whitesmoke;
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
 
 .project p {
-  color: black;
+  color: whitesmoke;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -439,7 +439,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fcfbfb;
   width: 100%;
   font-size: 17px;
-  font-style: italic;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;

@@ -104,13 +104,13 @@ const Projects = () =>{
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">VLOGS</Nav.Link>
+                                <Nav.Link eventKey="first">VLOGS 🕰️</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">SHORTS</Nav.Link>
+                                <Nav.Link eventKey="second">SHORTS 🩳</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="third">VOLUNTEER</Nav.Link>
+                                <Nav.Link eventKey="third">🎤  /  📸</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
