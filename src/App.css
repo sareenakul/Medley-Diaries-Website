@@ -596,64 +596,81 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Contacts */
 
-.contact {
-  padding: 80px 0;
-  position: relative;
-  z-index: 1; 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.contact img {
-  max-width: 100%;
+/* Logo box styles */
+.logo-box {
+  margin-right: 20px;
+}
+
+.logo {
+  max-width: 350px;
   height: auto;
 }
 
-.contact h2 {
-  font-size: 4em;
+/* Form box styles */
+.form-box {
+  background-color: #0d0909;
+  padding: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header {
+  text-align: center;
   margin-bottom: 20px;
-  color: burlywood;
 }
 
-.contact form {
-  margin-top: 20px;
+.header h2 {
+  font-size: 24px;
+  color: white;
 }
 
-.contact input,
-.contact textarea {
-  width: 100%;
-  padding: 10px;
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
   margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1em;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-.contact textarea {
-  resize: vertical;
-}
-
-.contact button {
+.submit-button {
   background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  padding: 10px;
   cursor: pointer;
-  font-size: 1.2em;
+  transition: background-color 0.3s ease;
 }
 
-.contact button span {
-  margin-right: 5px;
+.submit-button:hover {
+  background-color: #0056b3;
 }
 
-.contact p {
+.success-message,
+.error-message {
+  text-align: center;
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 14px;
 }
 
-.contact .Success {
+.success-message {
   color: #28a745;
 }
 
-.contact .Warning {
+.error-message {
   color: #dc3545;
 }
