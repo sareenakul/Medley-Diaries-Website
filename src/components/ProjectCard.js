@@ -1,7 +1,5 @@
 import { Col } from "react-bootstrap"
 import { useState, useRef } from "react";
-
-
 const ProjectCard = ({title, description, url, onVideoPlay}) =>{
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -14,14 +12,12 @@ const ProjectCard = ({title, description, url, onVideoPlay}) =>{
         }
         setIsPlaying(false);
       };
-
       const handleClick = () => {
         if (!isPlaying) {
           onVideoPlay(videoRef); // Notify the parent component about the currently playing video
         }
         setIsPlaying(!isPlaying);
       };
-  
     return(
         <Col sm={6} md={4} onClick={handleClick}>
             <div className={`proj-imgbx ${isPlaying ? 'playing' : ''}`}>
@@ -36,6 +32,4 @@ const ProjectCard = ({title, description, url, onVideoPlay}) =>{
         </Col>
     )
 }
-
-
 export default ProjectCard;

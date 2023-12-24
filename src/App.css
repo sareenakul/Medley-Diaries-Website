@@ -613,31 +613,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: auto;
 }
 
-/* Form box styles */
 .form-box {
   background-color: #0d0909;
   padding: 200px;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
 }
-
-
-
 .header {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .header h2 {
   font-size: 24px;
-  color: white;
 }
-
 .form {
   display: flex;
   flex-direction: column;
 }
-
 .input-field {
   margin-bottom: 15px;
   padding: 20px;
@@ -645,7 +638,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 4px;
   font-size: 14px;
 }
-
 .submit-button {
   background-color: #007bff;
   color: #fff;
@@ -655,22 +647,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .submit-button:hover {
   background-color: #0056b3;
 }
-
 .success-message,
 .error-message {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
 }
-
 .success-message {
   color: #28a745;
 }
-
 .error-message {
   color: #dc3545;
 }

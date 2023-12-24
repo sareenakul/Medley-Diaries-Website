@@ -1,6 +1,9 @@
 import React, { createRef } from 'react';
 import emailjs from '@emailjs/browser';
 import logo from "../Assets/img/logo.png";
+import ProjectCard from './ProjectCard';
+
+  
 const isValidEmail = (email) => {
     // Regular expression for a basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -17,6 +20,15 @@ class ContactUs extends React.Component {
   sendEmail = (e) => {
     e.preventDefault();
     const userEmail = this.form.current.elements.user_email.value;
+    const userName = this.form.current.elements.from_name.value;
+    const userMessage = this.form.current.elements.message.value;
+
+    if (!userName || !userEmail || !userMessage) {
+        this.setState({ submissionStatus: 'error' });
+        alert('Please fill in all the required fields.');
+        return;
+      }
+
     if (!isValidEmail(userEmail)) {
         // Display an error message or take appropriate action
         console.log('Invalid email address');

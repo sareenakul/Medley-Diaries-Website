@@ -6,33 +6,33 @@ import { useRef } from "react";
 const Projects = () =>{
     const ytprojects = [
         {
-            title: "Vlog 01",
+            title: "Landing Canada",
             description: "My 1st vlog in Canada",
             url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
         },
         {
             
-            title: "Vlog 02",
+            title: "Montreal",
             description: "My 2nd vlog in Canada",
             url: "https://www.youtube.com/embed/K3uhiGc9Fu0?si=A6hlhnj8wa68029A",
         },
         {
-            title: "Vlog 03",
+            title: "Winters",
             description: "My 3rd vlog in Canada",
             url: "https://www.youtube.com/embed/xfisM-u78HE?si=QVDfB89BPa9EGcKP",
         },
         {
-            title: "Vlog 04",
+            title: "Toronto",
             description: "My 4th vlog in Canada",
             url: "https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3",
         },
         {
-            title: "Vlog 05",
+            title: "Downtown",
             description: "My 5th vlog in Canada",
             url: "https://www.youtube.com/embed/v1oS9Su_kcc?si=5TzGLph1plwgMA9s",
         },
         {
-            title: "Vlog 06",
+            title: "Quebeć",
             description: "My 6th vlog in Canada",
             url: "https://www.youtube.com/embed/t1hEpYHdH2I?si=N_ldsevm4Uk9pRlH",
         },
