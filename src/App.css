@@ -595,6 +595,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /* Contacts */
+.whole{
+  background-color: rgb(192, 248, 255);
+  padding: 0px;
+  border-radius: 20px;
+  margin-top: 60px;
+  height: 1000px;
+  
+  
+}
 
 .contact-container {
   display: flex;
@@ -603,9 +612,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100vh;
 }
 
+.form-copy-box{
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 500px;
+}
+
 /* Logo box styles */
 .logo-box {
   margin-right: 20px;
+}
+
+.logo-box h2{
+  color: #000000;
+}
+
+.highlight-line2{
+  background-color: #000000;
+  height: 2px;
+  width: auto;
+  margin-top: 5px;
 }
 
 .logo {
@@ -615,7 +643,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .form-box {
   background-color: #0d0909;
-  padding: 200px;
+  margin-bottom: 235px;
+  padding: 150px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
@@ -626,6 +655,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .header h2 {
   font-size: 24px;
+}
+
+.highlight-line {
+  background-color: white; /* Set your desired color */
+  height: 2px; /* Set your desired height */
+  width: 200px; /* Set your desired width */
+  margin-top: 5px; /* Adjust the spacing between the heading and the line */
 }
 .form {
   display: flex;

@@ -2,6 +2,7 @@ import React, { createRef } from 'react';
 import emailjs from '@emailjs/browser';
 import logo from "../Assets/img/logo.png";
 import ProjectCard from './ProjectCard';
+import { Container } from 'react-bootstrap';
 
   
 const isValidEmail = (email) => {
@@ -53,34 +54,43 @@ class ContactUs extends React.Component {
   render() {
     const { submissionStatus } = this.state;
     return (
-      <div className="contact-container">
-        <div className="form-copy-box">
-            <div className="logo-box">
-                <img src={logo} alt="Logo" className="logo" />
-            </div>
+        <div>
+            <Container className='whole'>
+                <div className="contact-container">
+                    <div className="form-copy-box">
+                        <div className="logo-box">
+                            <img src={logo} alt="Logo" className="logo" />
+                            <h2>Let's Collaborate</h2>
+                            <div className="highlight-line2"></div>
+                        </div>
+                    </div>
+                    <div className="form-box">
+                        <div className="header">
+                            <h2>
+                                Let's Connect
+                                <div className="highlight-line"></div>
+                            </h2>
+                        </div>
+                        <form ref={this.form} onSubmit={this.sendEmail} className="form">
+                            <label> Full Name</label>
+                            <input type="text" name="from_name" className="input-field"/>
+                            <label>Email</label>
+                            <input type="email" name="user_email" className="input-field"/>
+                            <label>Message</label>
+                            <textarea name="message" className="input-field"/>
+                            <input type="submit" value="Send" className="submit-button" />
+                        </form>
+                        {submissionStatus === 'success' && (
+                            <p className="success-message">Message sent successfully!</p>
+                        )}
+                        {submissionStatus === 'error' && (
+                            <p className="error-message">Something went wrong. Please try again later.</p>
+                        )}
+                    </div>
+                </div>
+            </Container>
         </div>
-        <div className="form-box">
-            <div className="header">
-                <h2>Let's Connect</h2>
-            </div>
-          <form ref={this.form} onSubmit={this.sendEmail} className="form">
-            <label>Name</label>
-            <input type="text" name="from_name" className="input-field"/>
-            <label>Email</label>
-            <input type="email" name="user_email" className="input-field"/>
-            <label>Message</label>
-            <textarea name="message" className="input-field"/>
-            <input type="submit" value="Send" className="submit-button" />
-          </form>
-          {submissionStatus === 'success' && (
-            <p className="success-message">Message sent successfully!</p>
-          )}
-          {submissionStatus === 'error' && (
-            <p className="error-message">Something went wrong. Please try again later.</p>
-          )}
-        </div>
-      </div>
     );
-  }
+    }
 }
 export default ContactUs;
