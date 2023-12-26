@@ -165,6 +165,8 @@ span.navbar-text {
     background: linear-gradient(90.21deg, rgba(251, 102, 3, 0.877) -5.91%, rgba(250, 168, 3, 0.5) 111.58%);/* Darker blue on hover */
   }
 }
+
+
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -658,7 +660,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .highlight-line {
   background-color: white; /* Set your desired color */
   height: 2px; /* Set your desired height */
-  width: 200px; /* Set your desired width */
+  width:auto;
   margin-top: 5px; /* Adjust the spacing between the heading and the line */
 }
 
@@ -699,4 +701,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .error-message {
   color: #dc3545;
+}
+
+
+
+/*This is the styling for the footer*/
+.footer {
+  background-color: #343a40; /* Background color */
+  color: white; /* Text color */
+  padding: 1rem;
+  margin-top: 2rem;
+  position: fixed;
+}
+
+.footer-logo {
+  max-width: 100px; /* Adjust the maximum width of the logo */
+  height: auto;
+}
+
+/* Center the text in the small screen and align it to the end on larger screens */
+.text-center {
+  text-align: center;
+}
+
+.text-sm-end {
+  text-align: end;
 }

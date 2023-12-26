@@ -77,10 +77,10 @@ class ContactUs extends React.Component {
                                                 <b>Contact Number </b>: (+1)4379704218
                                             </div>
                                             <div style={{margin: '1rem'}}>
-                                                <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223" className='btn btn-outline-primary'> <> </>CONNECT ON LINKEDIN </a>
+                                                <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223" className='btn btn-outline-primary'> <> </>👨‍💻CONNECT ON LINKEDIN </a>
                                             </div>
                                             <div>
-                                                <a href="mailto:medleydiaries@gmail.com" style={{textDecoration: 'none',}} className="btn btn-outline-danger"> medleydiaries@gmail.com </a>
+                                                <a href="mailto:medleydiaries@gmail.com" style={{textDecoration: 'none',}} className="btn btn-outline-danger">🖋️medleydiaries@gmail.com </a>
                                             </div>
                                         </span>
                                     </div>
@@ -100,7 +100,7 @@ class ContactUs extends React.Component {
                                     <input type="email" name="user_email" className="input-field"/>
                                     <label>Message</label>
                                     <textarea name="message" className="input-field"/>
-                                    <input type="submit" value="Send" className="submit-button" />
+                                    <input type="submit" value="✉️Send Message" className="submit-button" />
                                 </form>
                                 {submissionStatus === 'success' && (<p className="success-message">Message sent successfully!</p>)}
                                 {submissionStatus === 'error' && (<p className="error-message">Something went wrong. Please try again later.</p>)}
