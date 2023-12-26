@@ -8,7 +8,6 @@ import Contact from './components/Contact';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
-
 function App() {
   return (
     <div className="App">
@@ -19,7 +18,7 @@ function App() {
       <Main>
         <Contact/>
       </Main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

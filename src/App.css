@@ -28,6 +28,8 @@ html{
 }
 
 body{
+  min-height: 100vh;
+  margin: 0;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
@@ -40,6 +42,10 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+main {
+  flex: 1;
 }
 
 .App {
@@ -707,12 +713,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*This is the styling for the footer*/
 .footer {
-  background-color: #343a40; /* Background color */
-  color: white; /* Text color */
-  padding: 1rem;
-  margin-top: 2rem;
-  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    height: "40px";
 }
+
+
 
 .footer-logo {
   max-width: 100px; /* Adjust the maximum width of the logo */

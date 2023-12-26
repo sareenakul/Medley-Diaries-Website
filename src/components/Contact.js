@@ -66,7 +66,7 @@ class ContactUs extends React.Component {
                                         <h2>Let's Collaborate</h2>
                                         <p>Let's create something amazing together!</p>
                                         <hr className="highlight-line2"></hr>
-                                        <span> 
+                                        <span>
                                             <div>
                                                 <b>Contact Email</b>: medleydiaries@gmail.com
                                             </div>
