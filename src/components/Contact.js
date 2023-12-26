@@ -1,8 +1,8 @@
 import React, { createRef } from 'react';
 import emailjs from '@emailjs/browser';
 import logo from "../Assets/img/logo.png";
-import ProjectCard from './ProjectCard';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
+
 
   
 const isValidEmail = (email) => {
@@ -56,38 +56,58 @@ class ContactUs extends React.Component {
     return (
         <div>
             <Container className='whole'>
-                <div className="contact-container">
-                    <div className="form-copy-box">
-                        <div className="logo-box">
-                            <img src={logo} alt="Logo" className="logo" />
-                            <h2>Let's Collaborate</h2>
-                            <div className="highlight-line2"></div>
-                        </div>
+                <Row>
+                    <div className="contact-container">
+                        <Col sm={12} md={12} lg={6}>
+                            <center>
+                                <div className="form-copy-box">
+                                    <div className="logo-box">
+                                        <img src={logo} alt="Logo" className="logo" />
+                                        <h2>Let's Collaborate</h2>
+                                        <p>Let's create something amazing together!</p>
+                                        <hr className="highlight-line2"></hr>
+                                        <span> 
+                                            <div>
+                                                <b>Contact Email</b>: medleydiaries@gmail.com
+                                            </div>
+                                            <div>
+                                                <b>Location </b>: Vaughan, ON
+                                            </div>
+                                            <div>
+                                                <b>Contact Number </b>: (+1)4379704218
+                                            </div>
+                                            <div style={{margin: '1rem'}}>
+                                                <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223" className='btn btn-outline-primary'> <> </>CONNECT ON LINKEDIN </a>
+                                            </div>
+                                            <div>
+                                                <a href="mailto:medleydiaries@gmail.com" style={{textDecoration: 'none',}} className="btn btn-outline-danger"> medleydiaries@gmail.com </a>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </center>
+                        </Col>
+                        <Col sm={12} md={12} lg={6}>
+                            <Container fluid='sm' className="form-box">
+                                <center className="header">
+                                    <h2>Let's Connect</h2>
+                                    <div className="highlight-line"></div>
+                                </center>
+                                <form ref={this.form} onSubmit={this.sendEmail} className="form">
+                                    <label> Full Name</label>
+                                    <input type="text" name="from_name" className="input-field"/>
+                                    <label>Email</label>
+                                    <input type="email" name="user_email" className="input-field"/>
+                                    <label>Message</label>
+                                    <textarea name="message" className="input-field"/>
+                                    <input type="submit" value="Send" className="submit-button" />
+                                </form>
+                                {submissionStatus === 'success' && (<p className="success-message">Message sent successfully!</p>)}
+                                {submissionStatus === 'error' && (<p className="error-message">Something went wrong. Please try again later.</p>)}
+                            </Container>
+                        </Col>
                     </div>
-                    <div className="form-box">
-                        <div className="header">
-                            <h2>
-                                Let's Connect
-                                <div className="highlight-line"></div>
-                            </h2>
-                        </div>
-                        <form ref={this.form} onSubmit={this.sendEmail} className="form">
-                            <label> Full Name</label>
-                            <input type="text" name="from_name" className="input-field"/>
-                            <label>Email</label>
-                            <input type="email" name="user_email" className="input-field"/>
-                            <label>Message</label>
-                            <textarea name="message" className="input-field"/>
-                            <input type="submit" value="Send" className="submit-button" />
-                        </form>
-                        {submissionStatus === 'success' && (
-                            <p className="success-message">Message sent successfully!</p>
-                        )}
-                        {submissionStatus === 'error' && (
-                            <p className="error-message">Something went wrong. Please try again later.</p>
-                        )}
-                    </div>
-                </div>
+                </Row>
             </Container>
         </div>
     );

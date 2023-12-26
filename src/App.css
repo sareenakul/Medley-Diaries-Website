@@ -596,13 +596,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Contacts */
 .whole{
-  background-color: rgb(192, 248, 255);
+  
   padding: 0px;
   border-radius: 20px;
   margin-top: 60px;
   height: 1000px;
-  
-  
 }
 
 .contact-container {
@@ -617,12 +615,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 500px;
 }
 
 /* Logo box styles */
 .logo-box {
   margin-right: 20px;
+  color: #000000;
 }
 
 .logo-box h2{
@@ -643,7 +641,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .form-box {
   background-color: #0d0909;
-  margin-bottom: 235px;
+  margin-top: 20px;
   padding: 150px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -663,6 +661,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 200px; /* Set your desired width */
   margin-top: 5px; /* Adjust the spacing between the heading and the line */
 }
+
+
+
+
 .form {
   display: flex;
   flex-direction: column;
