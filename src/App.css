@@ -48,6 +48,8 @@ main {
   flex: 1;
 }
 
+
+
 .App {
   text-align: center;
 }
@@ -603,19 +605,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /* Contacts */
-.whole{
-  
-  padding: 0px;
-  border-radius: 20px;
-  margin-top: 60px;
-  height: 1000px;
-}
 
 .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background-color: #007bff;
+  border-radius: 20px;
+  margin-top: 60px;
+  height: auto;
+  width: auto;
 }
 
 .form-copy-box{
@@ -650,7 +646,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .form-box {
   background-color: #0d0909;
   margin-top: 20px;
-  padding: 150px;
+  padding: 120px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
