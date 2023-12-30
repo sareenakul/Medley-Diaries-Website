@@ -3,30 +3,25 @@
   src: url('./Assets/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
-
 @font-face {
   font-family: 'Centra-Medium';
   src: url('./Assets/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
-
 @font-face {
   font-family: 'Centra-Book';
   src: url('./Assets/CentraNo2-Book.ttf');
   font-weight: 400;
 }
-
 *{
   margin: 0;
   top: 0;
   box-sizing: border-box;
 }
-
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
-
 body{
   min-height: 100vh;
   margin: 0;
@@ -37,34 +32,26 @@ body{
   color: aliceblue !important;
   font-family: 'Centra', sans-serif !important;
 }
-
 h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
   line-height: normal;
 }
-
 main {
   flex: 1;
 }
-
-
-
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -75,11 +62,9 @@ main {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -88,10 +73,6 @@ main {
     transform: rotate(90deg);
   }
 }
-
-
-
-
 /* NavBar CSS*/
 nav.navbar {
   padding: 18px 0;
@@ -105,7 +86,6 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: rgb(255, 165, 0);
 }
-
 nav.navbar a.navbar-brand {
     width: 9%;
 }
@@ -173,8 +153,6 @@ span.navbar-text {
     background: linear-gradient(90.21deg, rgba(251, 102, 3, 0.877) -5.91%, rgba(250, 168, 3, 0.5) 111.58%);/* Darker blue on hover */
   }
 }
-
-
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -217,7 +195,6 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
-
 .Navbar-container{
   padding-top: 10px; /* Adjust the padding as needed */
   padding-bottom: 10px; /* Adjust the padding as needed */
@@ -267,7 +244,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
-
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -293,7 +269,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: bold; /* Make the text bold */
   margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
-
 .wrap {
   color: #666; /* Slightly lighter gray color for dynamic text */
   font-style: normal; /* Set normal font style for dynamic text */
@@ -315,8 +290,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-
-
 .banner button {
   background-color: #d0984f; /* Button background color (blue) */
   color: #fff; /* Button text color (white) */
@@ -326,7 +299,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 5px; /* Add a slight border radius for rounded corners */
   cursor: pointer; /* Add a pointer cursor on hover */
   transition: background-color 0.3s; /* Smooth transition for background color */
-
   /* Add additional styles for when the button is hovered */
   &:hover {
     background-color: #2980b9; /* Darker blue on hover */
@@ -358,7 +330,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-
 /* css for skills*****/
 .skill {
   padding: 0 0 50px 0;
@@ -403,22 +374,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
-
 /* Projects */
-
 .project {
-  padding: 80px 0;
+  padding: 70px 0;
   position: relative;
   background-color: black;
 }
-
 .project h2 {
   color: whitesmoke;
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
-
 .project p {
   color: whitesmoke;
   font-size: 18px;
@@ -428,7 +395,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -436,11 +402,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: rgba(218, 11, 11, 0.863);
   overflow: hidden;
 }
-
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
-
 /* for tabs 1,2,3*/
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -456,7 +420,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-
 .project .nav-pills .nav-link::before {
   content: "";
   position: absolute;
@@ -468,38 +431,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-
 .project .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
-
 .project .nav.nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
-
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
 }
-
 .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
-
-
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
-
 .proj-imgbx::before {
   content: "";
   opacity: 0.85;
@@ -508,11 +463,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
-
 .proj-imgbx:hover::before {
   height: 100%;
 }
-
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -523,12 +476,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
-
 .proj-txtx h4 {
   padding: auto;
   color: wheat;
@@ -538,7 +489,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
-
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
@@ -553,7 +503,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
-
 /* New reelvideo component */
 .reel-video-container {
   position: relative;
@@ -563,7 +512,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 100%;
   max-height: 90%;
 }
-
 .reel-video-container::before {
   content: "";
   opacity: 0.85;
@@ -572,11 +520,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
-
 .reel-video-container:hover::before {
   height: 100%;
 }
-
 .video-title {
   position: absolute;
   text-align: center;
@@ -594,59 +540,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
-
 .reel-video-container:hover .video-title {
   top: 50%;
   opacity: 1;
 }
-
-
-
-
-
 /* Contacts */
-
-.contact-container {
-  background-color: #007bff;
-  border-radius: 20px;
-  margin-top: 60px;
-  height: auto;
-  width: auto;
+.contact-form {
+  margin-bottom: 5rem;
+  background-color: whitesmoke;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  max-width: 50rem;
+  color: black;
 }
-
-.form-copy-box{
-  background-color: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.contact_section {
+  margin-top: 2rem;
 }
-
+.contact-bg{
+  background-color: #000000;
+}
 /* Logo box styles */
 .logo-box {
   margin-right: 20px;
   color: #000000;
 }
-
 .logo-box h2{
   color: #000000;
 }
-
 .highlight-line2{
   background-color: #000000;
   height: 2px;
   width: auto;
   margin-top: 5px;
 }
-
 .logo {
   max-width: 350px;
   height: auto;
 }
-
 .form-box {
   background-color: #0d0909;
   margin-top: 20px;
-  padding: 120px;
+  padding: auto;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
@@ -658,17 +592,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .header h2 {
   font-size: 24px;
 }
-
 .highlight-line {
   background-color: white; /* Set your desired color */
   height: 2px; /* Set your desired height */
   width:auto;
   margin-top: 5px; /* Adjust the spacing between the heading and the line */
 }
-
-
-
-
 .form {
   display: flex;
   flex-direction: column;
@@ -704,9 +633,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .error-message {
   color: #dc3545;
 }
-
-
-
 /*This is the styling for the footer*/
 .footer {
     left: 0;
@@ -717,19 +643,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
     height: "40px";
 }
-
-
-
 .footer-logo {
   max-width: 100px; /* Adjust the maximum width of the logo */
   height: auto;
 }
-
 /* Center the text in the small screen and align it to the end on larger screens */
 .text-center {
   text-align: center;
 }
-
 .text-sm-end {
   text-align: end;
 }

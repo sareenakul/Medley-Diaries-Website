@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div className="main" style={{ width: '100%', height: 'auto', position: 'relative' }}>
       <div className="overlay">
-      <video src={home} autoPlay loop muted style={{ width: '100%', height: 'auto', position: 'absolute', top: 0, left: 0, zIndex: -1 }} />
+      <video src={home} autoPlay loop muted style={{ width: '100%', height: 'auto', position: 'fixed', top: 0, left: 0, zIndex: -1 }} />
       <Contact />
       </div>
     </div>

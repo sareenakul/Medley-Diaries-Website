@@ -54,7 +54,7 @@ class ContactUs extends React.Component {
   render() {
     const { submissionStatus } = this.state;
     return (
-        <Container>
+        <Container className='contact-bg'>
         <Row className='contact_section'>
             <Col sm={12} md={12} lg={6}>
             <center>
@@ -80,6 +80,8 @@ class ContactUs extends React.Component {
                             <a href="mailto:medleydiaries@gmail.com" 
                                 style={{textDecoration: 'none',}}>medleydiaries@gmail.com </a>
                         </div>
+
+                        <img src={logo} alt="Logo" className="logo"/>
 
                     </span>
                 </center>
