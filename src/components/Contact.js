@@ -73,7 +73,7 @@ class ContactUs extends React.Component {
                             <b>Contact Number </b>: (+1)4379704218
                         </div>
                         <div style={{margin: '1rem'}}>
-                            <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223">CONNECT ON LINKEDIN </a>
+                            <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223" target="_blank" rel="noopener noreferrer">CONNECT ON LINKEDIN </a>
                         </div>
 
                         <div>
@@ -81,14 +81,17 @@ class ContactUs extends React.Component {
                                 style={{textDecoration: 'none',}}>medleydiaries@gmail.com </a>
                         </div>
 
-                        <img src={logo} alt="Logo" className="logo"/>
-
+                        <div className='proj-imgbx' style={{ marginTop: '20px' }}>
+                            <iframe width="640" height="390" src="https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3" title="Recomendation" frameBorder="0" allowFullScreen>
+                            </iframe>
+                        </div>
                     </span>
                 </center>
             </Col>
             <Col sm={12} md={12} lg={6}>
                 <Container fluid='sm' className='contact-form' style={{marginTop: '20px'}}> 
                     <center>
+                    <img src={logo} alt="Logo" className="logo"/>
                         <h2> Get in Touch </h2>
                         <hr className='customline'></hr>
                     </center>

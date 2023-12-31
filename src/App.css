@@ -557,33 +557,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 2rem;
 }
 .contact-bg{
-  background-color: #000000;
+  background-color: pink;
+  padding: auto;
+  margin-top: 25px;
+  border-radius: 20px;
 }
-/* Logo box styles */
-.logo-box {
-  margin-right: 20px;
-  color: #000000;
-}
-.logo-box h2{
-  color: #000000;
-}
-.highlight-line2{
-  background-color: #000000;
-  height: 2px;
-  width: auto;
-  margin-top: 5px;
+.customline{
+  width: 50%;
+  background-color: white;
 }
 .logo {
   max-width: 350px;
   height: auto;
-}
-.form-box {
-  background-color: #0d0909;
-  margin-top: 20px;
-  padding: auto;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: white;
 }
 .header {
   text-align: center;
