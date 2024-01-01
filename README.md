@@ -2,12 +2,12 @@
 
 
 
-## About Me
+## 🌟 About Me
 
 I am a Computer Science student curently persuing BSc. Hons. at York University.
 I do vlog some times and also do videography as a hobby.
 
-## About Me-dley
+## 📓About Me-dley 
 
 Medley Diaries is a personal portfolio website developed using ReactJs,
 showcasing my Youtube projects, skills and contact information.
@@ -15,6 +15,7 @@ The website features a dynamic and responsive design.
 
 ## Project Structure
 
+```
 /src
 |-- components
 |   |-- Banner.js
@@ -32,6 +33,8 @@ The website features a dynamic and responsive design.
 |-- App.js
 |-- index.js
 |-- ...
+
+```
 
 
 # Medley Diaries
