@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="overlay">
-        <video src={home} autoPlay loop muted />
+        <video src={home} preload="auto" autoPlay loop muted />
         <Contact />
       </div>
     </div>
