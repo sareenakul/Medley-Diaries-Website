@@ -56,7 +56,7 @@ class ContactUs extends React.Component {
     return (
         <Container className='contact-bg'>
         <Row className='contact_section'>
-            <Col sm={12} md={12} lg={6}>
+            <Col sm={12} md={12} lg={6} className='consi'>
             <center>
                     <h2> Let's Collaborate </h2>
                     <p> Let's create something amazing together!</p>
@@ -82,7 +82,7 @@ class ContactUs extends React.Component {
                         </div>
 
                         <div className='proj-imgbx' style={{ marginTop: '20px' }}>
-                            <iframe width="640" height="390" src="https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3" title="Recomendation" frameBorder="0" allowFullScreen>
+                            <iframe width="440" height="300" src="https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3" title="Recomendation" frameBorder="0" allowFullScreen>
                             </iframe>
                         </div>
                     </span>
@@ -109,9 +109,6 @@ class ContactUs extends React.Component {
                 </Container>
             </Col>
         </Row>
-        <div className='footer-contact' style={{display: 'none'}}>
-            contact form
-        </div>
         </Container>
     );
     }

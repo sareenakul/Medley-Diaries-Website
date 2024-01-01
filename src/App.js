@@ -18,7 +18,9 @@ function App() {
       <Main>
         <Contact/>
       </Main>
-      <Footer />
+      <div className='footer'>
+        <Footer/>
+    </div>
     </div>
   );
 }

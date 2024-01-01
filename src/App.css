@@ -22,26 +22,75 @@ html{
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
-body{
+/* body{
   min-height: 100vh;
   margin: 0;
+  padding: 0;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
   background-color: brown !important;
   color: aliceblue !important;
   font-family: 'Centra', sans-serif !important;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
   line-height: normal;
 }
-main {
-  flex: 1;
+/* main only */
+.main {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .main video {
+    height: 100vh;
+  }
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay > * {
+    margin: 1rem; /* Add margin to separate elements */
+  }
 }
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content {
+  flex: 1;
 }
 .App-logo {
   height: 40vmin;
@@ -557,14 +606,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 2rem;
 }
 .contact-bg{
-  background-color: pink;
-  padding: auto;
+  background-color: rgb(255, 165, 0);
   margin-top: 25px;
   border-radius: 20px;
+  height: 890px;
 }
 .customline{
   width: 50%;
-  background-color: white;
+  background-color: black;
 }
 .logo {
   max-width: 350px;
@@ -577,15 +626,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .header h2 {
   font-size: 24px;
 }
-.highlight-line {
-  background-color: white; /* Set your desired color */
-  height: 2px; /* Set your desired height */
-  width:auto;
-  margin-top: 5px; /* Adjust the spacing between the heading and the line */
-}
 .form {
   display: flex;
   flex-direction: column;
+}
+.contact-bg container{
+  background-color: white;
+}
+.consi{
+  background-color: wheat;
+  border-radius: 0.3rem;
+  padding: 2rem;
+  max-width: 50rem;
+  margin-bottom: 4rem;
+  color: #000000;
 }
 .input-field {
   margin-bottom: 15px;
