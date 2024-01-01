@@ -10,8 +10,7 @@ const Projects = () =>{
             description: "My 1st vlog in Canada",
             url: "https://www.youtube.com/embed/FAxgVkG4hMM?si=hwddnaRefrLbvcax",
         },
-        {
-            
+        { 
             title: "Montreal",
             description: "My 2nd vlog in Canada",
             url: "https://www.youtube.com/embed/K3uhiGc9Fu0?si=A6hlhnj8wa68029A",
@@ -37,7 +36,6 @@ const Projects = () =>{
             url: "https://www.youtube.com/embed/t1hEpYHdH2I?si=N_ldsevm4Uk9pRlH",
         },
     ];
-
     const volprojects = [
         {
             title: "Feeling Called Mayo",
@@ -65,7 +63,6 @@ const Projects = () =>{
             url: "https://www.youtube.com/embed/JuYODdv6uiY?si=k7rmJ0bEnRa5WCfl",
         },
     ];
-
     const videoFileNames = [
         { fileName: 'igvid1.mp4', title: 'Video 1' },
         { fileName: 'igvid2.mp4', title: 'Video 2' },
@@ -77,23 +74,16 @@ const Projects = () =>{
         { fileName: 'igvid8.mp4', title: 'Video 8' },
         { fileName: 'igvid9.mp4', title: 'Video 9' }
     ];
-
     const currentVideoRef = useRef(null);
-
     const handleVideoPlay = (videoRef) => {
         // Pause the currently playing video if there is one
         if (currentVideoRef.current && currentVideoRef.current !== videoRef.current) {
-          currentVideoRef.current.pause();
-          currentVideoRef.current.currentTime = 0;
-        }
-    
+            currentVideoRef.current.pause();
+            currentVideoRef.current.currentTime = 0;
+          }
         // Update the reference to the currently playing video
         currentVideoRef.current = videoRef.current;
       };
-
-    
-
-
     return(
         <section className="project" id="projects">
             <Container>
@@ -127,9 +117,7 @@ const Projects = () =>{
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
                                 <Row>
-                                   
-                                    {
-                                        videoFileNames.map((videoFileName, index) => {
+                                    {videoFileNames.map((videoFileName, index) => {
                                             return(
                                                 <Col key={index} sm={6} md={4} lg={4}>
                                                     <ReelVideo key={index} {...videoFileName} onVideoPlay={handleVideoPlay}/>

@@ -40,6 +40,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -56,6 +57,7 @@ h1,h2,h3,h4,h5,h6{
 
 .overlay {
   position: relative;
+  background-color: rgba(255, 222, 173, 0.22);
 }
 
 video {
@@ -85,9 +87,9 @@ video {
 }
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* min-height: 100vh; */
 }
 .main-content {
   flex: 1;
@@ -503,6 +505,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+}
+.vidbox{
+  background-color: #000000;
+  border-radius: 20px;
 }
 .proj-imgbx::before {
   content: "";

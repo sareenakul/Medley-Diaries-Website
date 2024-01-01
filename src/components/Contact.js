@@ -80,10 +80,10 @@ class ContactUs extends React.Component {
                             <a href="mailto:medleydiaries@gmail.com" 
                                 style={{textDecoration: 'none',}}>medleydiaries@gmail.com </a>
                         </div>
-
-                        <div className='proj-imgbx' style={{ marginTop: '20px' }}>
-                            <iframe width="440" height="300" src="https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3" title="Recomendation" frameBorder="0" allowFullScreen>
-                            </iframe>
+                        <div className='vidbox'>
+                            <div className='proj-imgbx' style={{ marginTop: '20px' }}>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/C2CkV3NzJEs?si=KYpM5pBSIXCCBlS3" title="Recomendation" frameBorder="0" allowFullScreen></iframe>
+                            </div>
                         </div>
                     </span>
                 </center>
