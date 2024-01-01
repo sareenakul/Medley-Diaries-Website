@@ -7,8 +7,12 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() =>{
+    document.title = "Medley Diaries"
+  })
   return (
     <div className="App">
       <NavBar />
