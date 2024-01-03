@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-scroll";
 import igg from '../Assets/img/igg.png';
 import ln from '../Assets/img/ln.png';
 import ytl from '../Assets/img/ytl.png';
@@ -51,9 +52,11 @@ export const NavBar = () =>{
                     <img src={ytl} alt="YouTube Icon" className="social-icon-img"/>
                 </a>
             </div>
+            <Link to="contact" spy={true} smooth={true} duration={500}>
             <button className="vvd" onClick={()=> console.log('connect')}>
                 <span>🔗Let's Connect</span>
             </button>
+            </Link>
           </span>
         </Navbar.Collapse>
       </Container>
