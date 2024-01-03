@@ -680,17 +680,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /*This is the styling for the footer*/
 .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: whitesmoke;
-    color: black;
-    text-align: center;
-    height: "40px";
-}
-.footer-logo {
-  max-width: 100px; /* Adjust the maximum width of the logo */
-  height: auto;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 /* Center the text in the small screen and align it to the end on larger screens */
 .text-center {
