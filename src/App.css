@@ -678,13 +678,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .error-message {
   color: #dc3545;
 }
-/*This is the styling for the footer*/
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
+
 /* Center the text in the small screen and align it to the end on larger screens */
 .text-center {
   text-align: center;

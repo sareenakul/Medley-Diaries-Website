@@ -3,9 +3,10 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: whitesmoke;
-    color: black;
+    background-color: rgb(6, 6, 6);
+    color: whitesmoke;
     text-align: center;
     height: 4rem;
     z-index: 999;
+    margin-top: auto;
 }
