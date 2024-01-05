@@ -45,11 +45,11 @@ export const Banner =()=>{
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to MedleyDiaries</span>
+                        <span className="tagline"><i>Welcome to</i><b> Medley Diaries</b></span>
                         <h1 className="hii">{`hi, I am a`}
                         <span className="wrap">{text}!</span>
                         </h1>
-                        <p>MedleyDiaries has kept a record of the most amazing days of mine here in Canada</p>
+                        <p><b>MedleyDiaries~ A record of the most amazing days of mine here in Canada</b></p>
                         <Link to="contact" spy={true} smooth={true} duration={500}>
                             <button className="button" onClick={()=> console.log('connect')}>Let's Connect<ArrowRightCircle size={25}/></button>
                         </Link>

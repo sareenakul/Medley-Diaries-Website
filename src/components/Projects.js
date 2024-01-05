@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import ReelVideo from "./ReelVideo";
 import { useRef } from "react";
 
+
 const Projects = () =>{
     const ytprojects = [
         {
@@ -63,6 +64,7 @@ const Projects = () =>{
             url: "https://www.youtube.com/embed/JuYODdv6uiY?si=k7rmJ0bEnRa5WCfl",
         },
     ];
+
     const videoFileNames = [
         { fileName: 'igvid1.mp4', title: 'Video 1' },
         { fileName: 'igvid2.mp4', title: 'Video 2' },

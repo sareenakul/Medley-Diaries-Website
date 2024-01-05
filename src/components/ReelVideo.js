@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 
+
 const ReelVideo = ({fileName, title, width, height, onVideoPlay}) =>{
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -20,6 +21,7 @@ const ReelVideo = ({fileName, title, width, height, onVideoPlay}) =>{
   };
     const videoSource = require(`../Assets/reelvids/${fileName}`);
     return(
+      
         <div className={`reel-video-container ${isPlaying ? 'playing' : ''}`}
         style={{ width, height}}
         onClick={handleClick}>
