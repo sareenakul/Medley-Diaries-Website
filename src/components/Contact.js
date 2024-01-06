@@ -2,8 +2,6 @@ import React, { createRef } from 'react';
 import emailjs from '@emailjs/browser';
 import logo from "../Assets/img/logo.png";
 import { Col, Container, Row } from 'react-bootstrap';
-
-
   
 const isValidEmail = (email) => {
     // Regular expression for a basic email validation
@@ -78,7 +76,10 @@ class ContactUs extends React.Component {
 
                         <div>
                             <a href="mailto:medleydiaries@gmail.com" 
-                                style={{textDecoration: 'none',}}>medleydiaries@gmail.com </a>
+                                style={{textDecoration: 'none', }}>medleydiaries@gmail.com </a>
+                        </div>
+                        <div className='recom'>
+                
                         </div>
                         <div className='vidbox'>
                             <div className='proj-imgbx' style={{ marginTop: '20px' }}>

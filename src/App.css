@@ -501,7 +501,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
+.recom{
+  margin-bottom: 100px;
+}
 .vidbox{
+  width: auto;
   background-color: #000000;
   border-radius: 20px;
 }
@@ -644,11 +648,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .consi{
   background-color: whitesmoke;
-  /* border: 5px solid black; */
+  margin-top: 10rem;
   border-radius: 0.3rem;
+  border: 2px solid black;
   padding: 2rem;
   max-width: 50rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   color: #000000;
 }
 .input-field {
