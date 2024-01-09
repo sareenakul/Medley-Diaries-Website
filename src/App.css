@@ -445,18 +445,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgba(218, 11, 11, 0.863);
+  background-color: whitesmoke;
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
+  box-shadow: 1px 1px 1px black;
 }
 /* for tabs 1,2,3*/
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
-  color: #fcfbfb;
+  color: black;
   width: 100%;
   font-size: 17px;
   letter-spacing: 0.8px;
@@ -471,7 +472,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: wheat;
   top: 0;
   left: 0;
   z-index: -1;
