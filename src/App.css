@@ -295,6 +295,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 2px black solid;
 }
 .tagline {
   font-weight: 700; /* Bold font weight */
@@ -329,7 +330,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #706f6f;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -387,6 +388,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding: 60px 100px;
   margin-top: -50px;
+  box-shadow: 2px 1.5px 2px 2px black;
 }
 .skill h2 {
 	font-size: 45px;
@@ -610,6 +612,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0.3rem;
   max-width: 50rem;
   color: black;
+  border: 2px #000000 solid;
 }
 .contact_section {
   margin-top: 2rem;
@@ -624,6 +627,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 2;
   position: absolute;
   height: 890px;
+  overflow: auto;
 }
 .customline{
   width: 50%;

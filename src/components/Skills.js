@@ -31,7 +31,7 @@ const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Features</h2>
-              <p>Vlogs and my Content</p>
+              <p>Content's genre</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
                     <img src={record} alt="skill1"/>

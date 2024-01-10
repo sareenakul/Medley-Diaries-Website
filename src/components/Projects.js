@@ -3,7 +3,6 @@ import ProjectCard from "./ProjectCard";
 import ReelVideo from "./ReelVideo";
 import { useRef } from "react";
 
-
 const Projects = () =>{
     const ytprojects = [
         {
@@ -96,13 +95,13 @@ const Projects = () =>{
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                                <Nav.Link eventKey="first">VLOGS 🕰️</Nav.Link>
+                                <Nav.Link eventKey="first"><b>VLOGS 🕰️</b></Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">SHORTS 🩳</Nav.Link>
+                                <Nav.Link eventKey="second"><b>SHORTS 🩳</b></Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="third">🎤  /  📸</Nav.Link>
+                                <Nav.Link eventKey="third"><b>🎤 / 📸</b></Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
