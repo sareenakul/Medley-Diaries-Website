@@ -615,7 +615,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 2px #000000 solid;
 }
 .contact_section {
-  margin-top: 2rem;
+  padding: auto;
 }
 .contact-bg{
   background-color: rgb(255, 165, 0);
@@ -628,6 +628,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   height: 890px;
   overflow: auto;
+  scroll-behavior:unset;
 }
 .customline{
   width: 50%;
