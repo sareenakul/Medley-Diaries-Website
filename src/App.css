@@ -301,7 +301,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700; /* Bold font weight */
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: rgb(255, 214, 180);
+  background: rgb(210, 209, 209);
   font-size: 21px; /* Font size */
   margin-bottom: 16px; /* Add some bottom margin for spacing */
   display: inline-block; /* Display as inline block */

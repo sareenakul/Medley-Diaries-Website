@@ -91,7 +91,7 @@ const Projects = () =>{
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>All my youtube content that makes me relevant today</p>
+                        <p>Journey through my Vlogs</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
