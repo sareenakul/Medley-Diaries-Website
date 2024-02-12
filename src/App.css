@@ -127,7 +127,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: rgb(160 127 68);
+  background-color: #023d65;
 
 }
 nav.navbar a.navbar-brand {
@@ -384,10 +384,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background-color: rgb(0, 0, 0);
+  background-color: #011d30;
 }
 .skill-bx {
-  background: rgb(254, 253, 253);
+  background: rgb(197, 193, 193);
   border-radius: 64px;
   text-align: center;
   padding: 60px 100px;
@@ -430,8 +430,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 70px 0;
   position: relative;
-  background-color: black;
-  height: 100vh;
+  overflow: hidden;
+}
+.project:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom right, black 10%, #011d30 100%);
+  transform-origin: 50% 0;
+  transform: skewY(0deg);
 }
 .project h2 {
   color: whitesmoke;
