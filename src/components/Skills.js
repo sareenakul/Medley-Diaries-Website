@@ -24,6 +24,10 @@ const Skills = () => {
       items: 1,
     },
   };
+
+  
+
+
   return (
     <section className="skill" id="skills">
       <Container>

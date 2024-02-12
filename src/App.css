@@ -127,7 +127,8 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: rgb(255, 165, 0);
+  background-color: rgb(160 127 68);
+
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -193,7 +194,7 @@ span.navbar-text {
 
   /* Add additional styles for when the button is hovered */
   &:hover {
-    background: linear-gradient(90.21deg, rgba(251, 102, 3, 0.877) -5.91%, rgba(250, 168, 3, 0.5) 111.58%);/* Darker blue on hover */
+    background: #d0984f;/* Darker blue on hover */
   }
 }
 .social-icon a:hover img {
@@ -289,34 +290,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
-  padding: 100px 0 50px 0;
-  background-color: wheat;
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px black solid;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
-.tagline {
-  font-weight: 700; /* Bold font weight */
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: rgb(210, 209, 209);
-  font-size: 21px; /* Font size */
-  margin-bottom: 16px; /* Add some bottom margin for spacing */
-  display: inline-block; /* Display as inline block */
-  color: gray;
-  box-shadow: 10px 10px 20px rgba(0.1, 0.1, 2, 0.5);
-  border-radius: 3px;
+
+.banner:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom right, #023d65 1%, black 60%);
+  transform-origin: 100% 0;
+  transform: skewY(0deg);
 }
+
 .hii {
-  color: #333; /* Dark gray color for constant text */
+  color: #595858; /* Dark gray color for constant text */
   font-size: 24px; /* Adjust the font size as needed */
   font-weight: bold; /* Make the text bold */
   margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
 .wrap {
-  color: #666; /* Slightly lighter gray color for dynamic text */
+  color: white; /* Slightly lighter gray color for dynamic text */
   font-style: normal; /* Set normal font style for dynamic text */
   border-bottom: 1px solid #666; /* Add a subtle bottom border with gray color */
   padding-bottom: 2px; /* Adjust padding for better visual appearance */
@@ -330,7 +334,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #706f6f;
+  color: rgb(229, 225, 225);
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -380,10 +384,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background-color: rgb(253, 251, 251);
+  background-color: rgb(0, 0, 0);
 }
 .skill-bx {
-  background: rgb(114, 173, 158);
+  background: rgb(254, 253, 253);
   border-radius: 64px;
   text-align: center;
   padding: 60px 100px;
@@ -427,6 +431,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 70px 0;
   position: relative;
   background-color: black;
+  height: 100vh;
 }
 .project h2 {
   color: whitesmoke;
