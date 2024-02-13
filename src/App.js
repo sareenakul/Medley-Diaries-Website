@@ -20,9 +20,7 @@ function App() {
       
       <Projects />
       <Skills/>
-      <Main>
-        <Contact/>
-      </Main>
+      <Main/>
       <Footer/>
     </div>
   );
