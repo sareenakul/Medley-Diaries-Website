@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import logo from "../Assets/img/logo.png";
+import curveText from "../Assets/img/curveText.png";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
@@ -42,7 +43,7 @@ export const Banner =()=>{
     };
     return(
         <section className="banner" id="home">
-            <Container>
+            <Container className="rabbi">
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <h1 className="hii">{`hi, I am a`}
@@ -54,7 +55,7 @@ export const Banner =()=>{
                         </Link>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={logo} alt="Header"/>
+                        <img src={curveText} alt="Header"/>
                     </Col>
                 </Row>
             </Container>
