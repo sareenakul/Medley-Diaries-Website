@@ -131,7 +131,6 @@ h1,h2,h3,h4,h5,h6{
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 2rem; /* Adjust padding as needed */
   box-sizing: border-box;
@@ -661,7 +660,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: auto;
 }
 .contact-bg{
-  background-color: rgb(255, 165, 0, 0.7);
+  background-color: rgba(251, 251, 250);
   border: 4px solid black;
   border-radius: 20px;
   top: 50%;
@@ -670,8 +669,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 2;
   position: absolute;
   height: 890px;
-  overflow: auto;
-  scroll-behavior:unset;
+  
 }
 .customline{
   width: 50%;
