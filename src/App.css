@@ -121,20 +121,12 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-
-
-
-
 .visme_d {
-  width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  padding: 2rem; /* Adjust padding as needed */
-  box-sizing: border-box;
-  /* Other styles for the Visme form container */
+  align-items: center;  
 }
 /* NavBar CSS*/
 nav.navbar {
@@ -647,28 +639,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 /* Contacts */
-.contact-form {
-  margin-bottom: 5rem;
-  background-color: whitesmoke;
-  padding: 2rem;
-  border-radius: 0.3rem;
-  max-width: 50rem;
-  color: black;
-  border: 2px #000000 solid;
-}
-.contact_section {
-  padding: auto;
-}
+
+
 .contact-bg{
-  background-color: rgba(251, 251, 250);
-  border: 4px solid black;
+  background-color: rgba(251, 251, 250, 0.3);
+  border: 1px solid black;
   border-radius: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   position: absolute;
-  height: 890px;
+  height: 70vh;
+  overflow: hidden;
   
 }
 .customline{
@@ -686,23 +669,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .header h2 {
   font-size: 24px;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-}
-.contact-bg container{
-  background-color: white;
-}
-.consi{
-  background-color: whitesmoke;
-  margin-top: 10rem;
-  border-radius: 0.3rem;
-  border: 2px solid black;
-  padding: 2rem;
-  max-width: 50rem;
-  margin-bottom: 5rem;
-  color: #000000;
-}
+
+
 .input-field {
   margin-bottom: 15px;
   padding: 20px;
