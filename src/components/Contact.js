@@ -52,7 +52,7 @@ class ContactUs extends React.Component {
   render() {
     const { submissionStatus } = this.state;
     return (
-        <Container id='contact' className='contact-bg'>
+        <Container  className='contact-bg'>
         <Row className='contact_section'>
             <Col sm={12} md={12} lg={6} className='consi'>
             <center>
@@ -111,6 +111,7 @@ class ContactUs extends React.Component {
             </Col>
         </Row>
         </Container>
+        
     );
     }
 }
