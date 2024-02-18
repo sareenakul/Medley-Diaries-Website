@@ -302,6 +302,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ Banner Css ************/
 .banner {
+  padding-top: 100px;
   height: 100vh;
   position: relative;
   overflow: hidden;
