@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import logo from "../Assets/img/logo.png";
-import curveText from "../Assets/img/curveText.png";
+import webLogo from "../Assets/img/webLogo.png";
+import webL from "../Assets/img/webL.png";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
@@ -55,7 +55,7 @@ export const Banner =()=>{
                         </Link>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={curveText} alt="Header"/>
+                        <img src={webL} alt="Header"/>
                     </Col>
                 </Row>
             </Container>
