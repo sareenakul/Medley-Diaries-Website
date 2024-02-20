@@ -122,12 +122,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .visme_d {
-  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
+
 /* NavBar CSS*/
 nav.navbar {
   padding: 18px 0;
@@ -651,7 +651,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translate(-50%, -50%);
   z-index: 2;
   position: absolute;
-  height: 70vh;
+  height: 60vh;
   overflow: hidden;
   
 }
