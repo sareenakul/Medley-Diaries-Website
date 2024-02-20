@@ -48,7 +48,7 @@ export const NavBar = () =>{
                 <a href="https://ca.linkedin.com/in/akul-sareen-7a7501223" target="_blank" rel="noopener noreferrer">
                     <img src={ln} alt="LinkedIn Icon" className="social-icon-img"/>
                 </a>
-                <a href="https://www.youtube.com/@MedleyDiaries" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@MedleyDiaries?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
                     <img src={ytl} alt="YouTube Icon" className="social-icon-img"/>
                 </a>
             </div>

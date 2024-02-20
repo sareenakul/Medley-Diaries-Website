@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import webLogo from "../Assets/img/webLogo.png";
 import webL from "../Assets/img/webL.png";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
