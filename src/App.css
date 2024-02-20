@@ -302,8 +302,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ Banner Css ************/
 .banner {
-  padding-top: 100px;
-  height: 100vh;
+  padding-top: 50px;
+  height: 115vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -406,7 +406,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 .skill-bx {
-  background: rgb(197, 193, 193);
+  background: linear-gradient(to bottom right, white 2%, #023d65 70%);
   border-radius: 64px;
   text-align: center;
   padding: 60px 100px;
@@ -423,7 +423,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 22px;
     letter-spacing: 1px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    margin: 10px;
 }
 .skill-slider {
   width: 80%;
