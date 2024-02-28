@@ -9,7 +9,7 @@ I do vlog some times and also do videography as a hobby.
 
 ## 📓 About Me-dley 
 
-Medley Diaries is a personal portfolio website developed using ReactJs,
+Medley Diaries is a personal portfolio website developed using <b>ReactJs</b>,
 showcasing my Youtube projects, skills and contact information.
 The website features a dynamic and responsive design.
 
