@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import igg from '../Assets/img/igg.png';
 import ln from '../Assets/img/ln.png';
 import ytl from '../Assets/img/ytl.png';
-import MDlogo from '../Assets/MDlogo.png';
+import webL from "../Assets/img/webL.png";
 export const NavBar = () =>{
     const[activeLink, setActiveLink] = useState('home');
     const[scrolled, setScrolled] = useState(false);
@@ -29,7 +29,7 @@ export const NavBar = () =>{
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container className="Navbar-container">
         <Navbar.Brand href="#home">
-            <img src={MDlogo} alt="Medley Diaries Icon" className="medley-logo"/>
+            <img src={webL} alt="Medley Diaries Icon" className="medley-logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"> </span>
