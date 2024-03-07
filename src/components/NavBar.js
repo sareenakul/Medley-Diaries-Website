@@ -54,7 +54,7 @@ export const NavBar = () =>{
             </div>
             <Link to="contact" spy={true} smooth={true} duration={500}>
             <button className="vvd" onClick={()=> console.log('connect')}>
-                <span>🔗Let's Connect</span>
+                <span>Let's Connect</span>
             </button>
             </Link>
           </span>
